@@ -1,0 +1,25 @@
+<% extend '_base' %>
+
+<% block 'end_head' : %>
+<link rel="stylesheet" href="/build/css/landing.page.css">
+<% end %>
+
+<% block 'end_body' : %>
+
+<% end %>
+
+<h1>Home page</h1>
+
+<div class="actions">
+	<a class="mdl-button
+		mdl-js-button
+		mdl-js-ripple-effect
+		mdl-button--raised
+		mdl-button--accent"
+		href="<%= @_url('auth.sign-on') %>">Sign on</a>
+	<a class="mdl-button
+		mdl-js-button
+		mdl-js--fab
+		mdl-button--colored"
+		href="<%= @_url('auth.sign-up') %>">Sign up</a>
+</div>

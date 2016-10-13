@@ -1,0 +1,21 @@
+{
+  "name": "chatchat",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "hoangnv"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/HoangNong/chatchat",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "1.2.1"
+  }
+}

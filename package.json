@@ -1,0 +1,37 @@
+{
+  "name": "chatchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoangNong/chatchat.git"
+  },
+  "author": "hoangnv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoangNong/chatchat/issues"
+  },
+  "homepage": "https://github.com/HoangNong/chatchat#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "3.4.6",
+    "body-parser": "1.15.2",
+    "connect-flash": "0.1.1",
+    "cookie-parser": "1.4.3",
+    "di-linker": "2.1.2",
+    "ect": "0.5.9",
+    "express": "4.14.0",
+    "glob": "7.1.0",
+    "lodash": "4.16.4",
+    "mongoose": "4.6.3",
+    "node-uuid": "1.4.7",
+    "passport": "0.3.2",
+    "passport-facebook": "2.1.1",
+    "passport-local": "1.0.0",
+    "reverse-route": "1.3.0"
+  }
+}
