@@ -3,6 +3,7 @@
 exports.name = '/app';
 exports.requires = [
 	'/config/express',
+	'/config/auth'
 ];
 exports.activations = [
 	'/config/assets',
@@ -11,6 +12,9 @@ exports.activations = [
 	'/routes/core',
 	'/routes/api',
 ];
-exports.factory = function(app) {
+exports.factory = function(app, auth) {
+	app.use(auth.initialize());
+	app.use(auth.session());
+
 	return app;
 };

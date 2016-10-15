@@ -8,7 +8,10 @@ exports.value = {
 	db: 'mongodb://localhost/chatchat',
 	session: {
 		cookie: '_sid',
-		expiry: 60 * 60 * 1000
+		expiry: 60 * 60 * 1000,
+		secret: 'chatchat-chat-88888',
+		resave: true,
+		saveUninitialized: true
 	},
 	mail: {
 		form: 'noname@chatchat.nv',
