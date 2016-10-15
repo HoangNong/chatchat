@@ -7,12 +7,13 @@ exports.requires = [
 	'@cookie-parser',
 	'@path',
 	'@connect-flash',
+	'@express-session',
 	'/config/env'
 ];
 exports.activations = [
 	'/config/route'
 ];
-exports.factory = function(express, bodyParser, cookieParser, path,flash, env) {
+exports.factory = function(express, bodyParser, cookieParser, path,flash, session, env) {
 	var app = express();
 
 	if (env.development) {
@@ -32,6 +33,7 @@ exports.factory = function(express, bodyParser, cookieParser, path,flash, env) {
 	app.enable('trust proxy');
 	app.disable('x-powered-by');
 	app.use(flash());
+	app.use(session(env.session));
 
 	app.use(function(req, res, next) {
 		res.locals._env = env;

@@ -15,7 +15,10 @@ exports.factory = function(_, path, specifiedConfiguration) {
 		applicationName: 'chatchat',
 		session: {
 			cookie: '_sid',
-			expiry: 60 * 60 * 1000
+			expiry: 60 * 60 * 1000,
+			secret: 'chatchat-chat-88888',
+			resave: true,
+			saveUninitialized: true
 		},
 		development: true
 	};
