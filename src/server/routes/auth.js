@@ -12,7 +12,7 @@ exports.factory = function(app, auth, util, registration) {
 			.get(util.render('auth/sign-on'))
 			.post(auth.authenticate('local', {
 				session: false,
-				successRedirect: '/',
+				successRedirect: '/api/todos',
 				failureRedirect: '/sign-on',
 				failureFlash: true
 			}));
